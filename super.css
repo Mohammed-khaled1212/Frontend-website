@@ -1,69 +1,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Ubuntu:ital@1&display=swap');
+
+:root{
+  --bg: #0f172a;
+  --text: #e5e7eb;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+
+  /* لو عندك صورة 3.jpg في نفس الفولدر، سيب السطور دي.
+     لو مش موجودة، امسحهم عشان مايحصلش مشاكل */
+  background-image: url("3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
 *{
-    font-family: 'Merriweather', serif;
-    margin: 0;
-    padding: 0;
-    background:
-    url(3.jpg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;  
-    box-sizing: border-box; 
-    scroll-behavior: smooth;
+  font-family: 'Merriweather', serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 header{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 130px;
 }
+
 .logo{
-    color:aliceblue;
-    font-size: 40px;
-    font-weight: 200px;
-    text-decoration:none;
-    text-transform: uppercase;
-    padding-left: 20px;
+  color: aliceblue;
+  font-size: 40px;
+  font-weight: 200;   /* كانت 200px وده غلط */
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-left: 20px;
 }
+
 .navegation a{
-    
-    color: aliceblue;
-    font-size: 25px;
-    text-decoration: none;
-    padding-right: 30px;
+  color: aliceblue;
+  font-size: 25px;
+  text-decoration: none;
+  padding-right: 30px;
 }
 
 .navegation a:hover{
-    color: #6b0200;
-}
-.mian{
-    color: aliceblue;
-    width: 50%;
-    margin-top: 50px;
-    padding: 30px;
-}
-.mian h2{
-    font-size: 80px;
-    font-weight: 300;
-    text-transform: uppercase;
-}
-.mian p{
-    letter-spacing: 2px;
-    width: 450px;
-}
-.mian button{
-    color: white;
-    background-color: white;
-    font-size: 30px;
-    align-items: center;
-    padding: 10px 10px;
-    margin-top: 20px;
-    margin-left: 25%;
-    font-weight: 200px;
-    border-radius: 20px;
+  color: #6b0200;
 }
 
+.mian{
+  color: aliceblue;
+  width: 50%;
+  margin-top: 50px;
+  padding: 30px;
+}
+
+.mian h2{
+  font-size: 80px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.mian p{
+  letter-spacing: 2px;
+  width: 450px;
+}
+
+.mian button{
+  color: #ffffff;
+  background-color: transparent; /* بدل ما يبقى أبيض على أبيض */
+  font-size: 30px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-left: 25%;
+  font-weight: 200;  /* كانت 200px وده غلط */
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+}
 
 .mian button:hover{
-    color: #ae5f52;
-    background-color: white;
+  color: #ae5f52;
+  border-color: #ae5f52;
 }
